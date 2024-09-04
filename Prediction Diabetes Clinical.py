@@ -5,6 +5,7 @@ Created on Wed Aug 21 23:43:05 2024
 @author: Mary
 """
 import pandas as pd
+from sklearn.preprocessing import LabelEncoder
 
 data = pd.read_csv('D:\Learning\ML\Datasets\diabetes_dataset.csv')
 print(data)
@@ -71,7 +72,7 @@ unique_locations = data['location'].nunique()
 # Print the number of unique locations
 print(f"Number of unique locations: {unique_locations}")
 # Apply preprocessing
-from sklearn.preprocessing import LabelEncoder
+
 
 def preprocess(data):
     # Apply one-hot encoding to 'gender' and 'smoking_history'
